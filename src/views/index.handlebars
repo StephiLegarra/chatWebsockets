@@ -1,0 +1,23 @@
+<div class="container my-5">
+  <div class="row mb-3">
+    <div class="col-md-6 offset-md-3">   
+       <h1 class="bg-dark text-info text-center p-3">CHAT DE CODER</h1>
+        <!--LE PASAMOS UN ID MENSAJE chatbox -->
+          <input type="text" class="form-control" id="chatBox" placeholder="ingrese un mensaje..."/>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3"> 
+      <!--LE PASAMOS UN ID MENSAJES donde van quedando guardados -->
+      <div id="messageLogs"></div>
+       
+    </div>
+  </div>
+</div>
+
+<!-- CDN DE SWEET ALERT-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--PRIMERO VA EL SCRIPT DE SOCKET Y LUEGO EL NUESTRO -->
+<script src="socket.io/socket.io.js"></script>
+<script src="js/index.js"></script>
